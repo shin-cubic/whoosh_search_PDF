@@ -38,19 +38,24 @@ sudo apt-get install mecab mecab-ipadic-utf8 libmecab-dev
 
 ## 使用方法
 
-1. PDFファイルを`pdf/`ディレクトリに配置
+1. 必要なディレクトリを作成:
+```bash
+mkdir pdf index
+```
 
-2. インデックスを作成:
+2. PDFファイルを`pdf/`ディレクトリに配置
+
+3. インデックスを作成:
 ```bash
 python index_creator.py
 ```
 
-3. Webサーバーを起動:
+4. Webサーバーを起動:
 ```bash
 python index_gui.py
 ```
 
-4. ブラウザでアクセス:
+5. ブラウザでアクセス:
 ```
 http://localhost:5001
 ```
